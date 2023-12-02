@@ -1,6 +1,6 @@
 use anyhow::{Context, Result};
 
-use {{crate_name}}::part2::process;
+use day_2::part2::process;
 
 fn main() -> Result<()> {
     let input = include_str!("../../input2.txt");

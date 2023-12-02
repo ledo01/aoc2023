@@ -1,5 +1,5 @@
 [package]
-name = "{{project-name}}"
+name = "day_2"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 anyhow = { workspace = true }
+
+[dev-dependencies]
+rstest = "0.18.2"
