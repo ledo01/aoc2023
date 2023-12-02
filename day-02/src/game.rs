@@ -1,22 +1,12 @@
-use derive_more::Sum;
+use derive_more::{From, Sum};
 use std::cmp::max;
 use std::{ops::Add, str::FromStr};
 
-#[derive(Debug, Default, PartialEq, Sum)]
+#[derive(Debug, Default, PartialEq, Sum, From)]
 pub struct Round {
     pub red: usize,
     pub green: usize,
     pub blue: usize,
-}
-
-impl From<(usize, usize, usize)> for Round {
-    fn from(value: (usize, usize, usize)) -> Self {
-        Round {
-            red: value.0,
-            green: value.1,
-            blue: value.2,
-        }
-    }
 }
 
 impl FromStr for Round {
