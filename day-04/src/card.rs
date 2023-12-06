@@ -8,12 +8,6 @@ pub struct Card {
     pub count: usize,
 }
 
-impl Card {
-    pub fn new(id: usize, count: usize) -> Self {
-        Self { id, count }
-    }
-}
-
 impl FromStr for Card {
     type Err = String;
 

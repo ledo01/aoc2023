@@ -1,7 +1,8 @@
 [workspace]
 resolver = "2"
-members = ["day-01", "day-02", "day-03", "day-04"]
+members = ["day-01", "day-02", "day-03", "day-04", "day-05"]
 
 [workspace.dependencies]
 anyhow = "1.0.75"
 derive_more = "0.99.17"
+itertools = "0.12.0"

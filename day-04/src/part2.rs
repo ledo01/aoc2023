@@ -26,7 +26,11 @@ mod tests {
 
     #[test]
     fn test_process_card() {
-        let cards = vec![Card::new(1, 2), Card::new(2, 1), Card::new(3, 0)];
+        let cards = vec![
+            Card { id: 1, count: 2 },
+            Card { id: 2, count: 1 },
+            Card { id: 3, count: 0 },
+        ];
         assert_eq!(process_card(&cards[0], cards.as_slice()), 4)
     }
 
