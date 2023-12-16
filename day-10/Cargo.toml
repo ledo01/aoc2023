@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 anyhow = { workspace = true }
+geo = "0.27.0"
 itertools = { workspace = true }
